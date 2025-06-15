@@ -13,14 +13,14 @@ for (let i = 0; i < 30; i++) {
 setTimeout(() => {
   document.getElementById("date-screen").classList.add("hidden");
   document.getElementById("cake-screen").classList.remove("hidden");
-}, 3000);
+}, 5000);
 
 // Show gift screen after 8 seconds OR if the user clicks the cake
 const cake = document.getElementById("cake");
 cake.addEventListener("click", showGift);
 
 // Backup timeout in case user doesn’t click the cake
-setTimeout(showGift, 8000);
+setTimeout(showGift, 10000);
 
 function showGift() {
   const giftScreen = document.getElementById("gift-screen");
